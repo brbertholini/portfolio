@@ -5,7 +5,15 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '55px': '55px',
+        '1px' : '1px'
+      },
+      fontFamily: {
+        'jetbrains': ['JetBrains Mono', 'monospace'],
+      }
+    },
   },
   plugins: [],
 }
