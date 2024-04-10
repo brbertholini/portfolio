@@ -8,7 +8,8 @@ export default {
     extend: {
       spacing: {
         '55px': '55px',
-        '1px' : '1px'
+        '1px' : '1px',
+        '32px' : '32px'
       },
       fontFamily: {
         'jetbrains': ['JetBrains Mono', 'monospace'],
