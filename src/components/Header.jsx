@@ -1,7 +1,7 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export function Header() {
     const [nav, setNav] = useState(false);
@@ -9,6 +9,21 @@ export function Header() {
     const handleNav = () => {
         setNav(!nav)
     }
+
+    useEffect(() => {
+        const checkWindowSize = () => {
+            if (window.innerWidth > 768) {
+                setNav(true);
+            }
+        };
+
+        checkWindowSize();
+
+        // listener para redimensionamento da janela
+        window.addEventListener('resize', checkWindowSize);
+
+        return () => window.removeEventListener('resize', checkWindowSize);
+    }, []);
 
     return (
         <div className="flex justify-center px4 items-center h-24">
