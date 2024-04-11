@@ -10,21 +10,6 @@ export function Header() {
         setNav(!nav)
     }
 
-    useEffect(() => {
-        const checkWindowSize = () => {
-            if (window.innerWidth < 768) {
-                setNav(true);
-            }
-        };
-
-        checkWindowSize();
-
-        // listener para redimensionamento da janela
-        window.addEventListener('resize', checkWindowSize);
-
-        return () => window.removeEventListener('resize', checkWindowSize);
-    }, []);
-
     return (
         <div className="flex justify-center px4 items-center h-24">
             <div className="hidden pt-12 md:flex md:items-center ">
@@ -39,10 +24,10 @@ export function Header() {
                 </div>
             </div>
             <div onClick={handleNav} className="block md:hidden fixed text-[#C7C7C7] right-12">
-                {!nav ? <AiOutlineClose size={24} className="bg-[#C7C7C7] text-[#1F2329]"/> : <AiOutlineMenu size={24} className="bg-[#C7C7C7] text-[#1F2329]"/>}
+                {nav ? <AiOutlineClose size={24} className="bg-[#C7C7C7] text-[#1F2329]"/> : <AiOutlineMenu size={24} className="bg-[#C7C7C7] text-[#1F2329]"/>}
             </div>
             <div>
-                <div className={!nav ? 'fixed left-0 top-0 w-[60%] pl-10 pr-10  h-full bg-[#C7C7C7] ease-in-out duration-500' : 'fixed left-[-100%]'}>
+                <div className={nav ? 'fixed left-0 top-0 w-[60%] pl-10 pr-10  h-full bg-[#C7C7C7] ease-in-out duration-500' : 'fixed left-[-100%]'}>
                     <ul className="">
                         <li className="text-[#1F2329] border-b border-[#1F2329] pr-10  font-bold font-jetbrains text-xl pt-10">projetos</li>
                     </ul>
