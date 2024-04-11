@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="flex flex-col justify-center">
       <Header />
-      <div className="ml-8 mr-8 sm:ml-10 sm:mr-10 md:ml-12 md:mr-12 lg:ml-28 lg:mr-28 2xl:ml-60 2xl:mr-60">
+      <div className="ml-8 mr-8 sm:ml-10 sm:mr-10 md:ml-12 md:mr-12 lg:ml-28 lg:mr-28 2xl:ml-96 2xl:mr-96">
         <div className="flex flex-row">
           <div className="mt-14 flex flex-col">
             <h1 className="text-[28px] sm:text-[36px] font-jetbrains font-semibold text-white">Bruno Bertholini</h1>
@@ -23,7 +23,8 @@ function App() {
         <div className="pt-32 flex flex-col">
           <h1 className="text-[28px] sm:text-[36px] pb-12 font-jetbrains font-semibold text-white">Projetos</h1>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 justify-between items-center gap-8">
+        <div className="justify-items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-8">
           <Project 
             image={lovecandle}
             title="Gestão de estoque"
@@ -36,7 +37,19 @@ function App() {
             description="Projeto acadêmico do 4º semestre da faculdade. O projeto é um web site e um mobile app desenvolvido em Nodejs, React, Firebase e Kotlin pensado e desenvolvido para facilitar o processo de adoção de pets."
             repoLink="https://github.com/yuriTakamisawaRibeiro/AdoPet"
           />
-          
+                    <Project 
+            image={lovecandle}
+            title="Gestão de estoque"
+            description="Projeto real para um familiar. Sistema de estoque para uma loja de velas. Rest API desenvolvida com Java Spring, Hibernate, Docker, React no front-end, Figma para prototipação."
+            repoLink="https://github.com/brbertholini/love-candle-backend"
+          />
+            <Project 
+            image={adopet}
+            title="Adopet"
+            description="Projeto acadêmico do 4º semestre da faculdade. O projeto é um web site e um mobile app desenvolvido em Nodejs, React, Firebase e Kotlin pensado e desenvolvido para facilitar o processo de adoção de pets."
+            repoLink="https://github.com/yuriTakamisawaRibeiro/AdoPet"
+          />
+        </div>
         </div>
       </div>
     </div>
