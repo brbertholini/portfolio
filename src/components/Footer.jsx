@@ -10,7 +10,7 @@ export function Footer() {
             <button onClick={() => scrollToSection('projects', 140)} className="text-[#1F2329] font-jetbrains text-[16px] sm:text-[20px] hover:opacity-40 transition-all cursor-pointer">projetos</button>
             <button onClick={() => scrollToSection('container', 140)} className="text-[#1F2329] font-jetbrains text-[16px] sm:text-[20px] hover:opacity-40 transition-all cursor-pointer">voltar ao topo</button>
             </div>
-            <div className="text-[#1F2329] grid grid-cols-2 w-[50%] sm:w-auto sm:flex">
+            <div className="text-[#1F2329] grid grid-cols-2 w-[50%] sm:w-auto sm:flex sm:gap-6">
                 <a target="_blank" href="https://github.com/brbertholini"><FaGithub size={24} className="m-2 hover:opacity-40 transition-all cursor-pointer" /></a>
                 <a target="_blank" href="https://www.linkedin.com/in/bruno-bertholini/"><FaLinkedin size={24} className="m-2 hover:opacity-40 transition-all cursor-pointer" /></a>
                 <a target="_blank" href="mailto:brbertholini@gmail.com"><MdEmail size={24} className="m-2 hover:opacity-40 transition-all cursor-pointer" /></a>
