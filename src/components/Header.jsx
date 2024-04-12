@@ -3,6 +3,9 @@ import { MdEmail } from "react-icons/md";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useState } from "react";
 import { scrollToSection } from "../utils/utils";
+import { IoLogoWhatsapp } from "react-icons/io";
+
+
 
 export function Header() {
     const [nav, setNav] = useState(false);
@@ -22,6 +25,7 @@ export function Header() {
                     <a target="_blank" href="https://github.com/brbertholini"><FaGithub size={24} className="mr-8 hover:opacity-40 transition-all cursor-pointer" /></a>
                     <a target="_blank" href="https://www.linkedin.com/in/bruno-bertholini/"><FaLinkedin size={24} className="hover:opacity-40 transition-all cursor-pointer" /></a>
                     <a target="_blank" href="mailto:brbertholini@gmail.com"><MdEmail size={24} className="ml-8 hover:opacity-40 transition-all cursor-pointer" /></a>
+                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511990246137"><IoLogoWhatsapp size={24} className="ml-8 hover:opacity-40 transition-all cursor-pointer" /></a>
                 </div>
             </div>
             <div onClick={handleNav} className="flex md:hidden fixed text-[#1F2329] right-12">
@@ -48,9 +52,15 @@ export function Header() {
                             </a>
                         </li>
                         <li className="flex w-[100%] border-b border-[#1F2329] items-center pt-7">
-                            <a href="mailto:brbertholini@gmail.com" className="flex items-center hover:opacity-40">
+                            <a href="mailto:brbertholini@gmail.com" target="_blank" className="flex items-center hover:opacity-40">
                                 <MdEmail size={24} className="transition-all cursor-pointer" />
                                 <h1 className="text-xl font-jetbrains ml-3">E-mail</h1>
+                            </a>
+                        </li>
+                        <li className="flex w-[100%] border-b border-[#1F2329] items-center pt-7">
+                            <a href="https://api.whatsapp.com/send?phone=5511990246137" target="_blank" className="flex items-center hover:opacity-40">
+                                <IoLogoWhatsapp size={24} className="transition-all cursor-pointer" />
+                                <h1 className="text-xl font-jetbrains ml-3">Whatsapp</h1>
                             </a>
                         </li>
                     </ul>
