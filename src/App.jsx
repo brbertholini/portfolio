@@ -15,12 +15,12 @@ function App() {
       <div className="ml-8 mr-8 sm:ml-10 sm:mr-10 md:ml-12 md:mr-12 lg:ml-28 lg:mr-28 2xl:ml-96 2xl:mr-96">
         <div className="flex flex-row">
           <div className="flex flex-col">
-            <h1 className="text-[28px] sm:text-[36px] font-jetbrains font-semibold text-white">Bruno Bertholini,</h1>
-            <h1 className="mt-[-10px] text-[28px] sm:text-[32px] font-jetbrains font-semibold text-white">a Fullstack Developer</h1>
+            <h1 className="text-[24px] sm:text-[36px] font-jetbrains font-semibold text-white">Bruno Bertholini,</h1>
+            <h1 className="mt-[-10px] text-[24px] sm:text-[32px] font-jetbrains font-semibold text-white">a Fullstack Developer</h1>
             <p className="mt-5 text-[14px] sm:text-[16px] font-jetbrains text-[#C7C7C7] text-justify">Após ter algumas experiências com Design, me interessei por Front-end e posteriormente me apaixonei por desenvolvimento web fullstack. Projetei e desenvolvi diversos tipos de aplicações, confira.</p>
             <div className="flex flex-col sm:flex-row">
-              <button onClick={() => scrollToSection('contact', 140)} className="w-[100%] sm:w-fit hover:opacity-60 transition ease-in-out delay-80 mt-6 text-[#17191E] text-[18px] font-semibold bg-white p-4 pl-8 pr-8 font-jetbrains">entrar em contato</button>
-              <button onClick={() => scrollToSection('projects', 140)} className="w-[100%] sm:w-fit hover:opacity-60 transition ease-in-out delay-80 ml-0 sm:ml-8 mt-6 text-[#C7C7C7] text-[18px] font-semibold bg-transparent p-4 pl-8 pr-8 font-jetbrains">projetos</button>
+              <button onClick={() => scrollToSection('contact', 140)} className="w-[100%] sm:w-fit hover:opacity-60 hover:scale-110 transition ease-in-out delay-80 mt-6 text-[#17191E] text-[18px] font-semibold bg-white p-4 pl-8 pr-8 font-jetbrains">entrar em contato</button>
+              <button onClick={() => scrollToSection('projects', 140)} className="w-[100%] sm:w-fit hover:opacity-60 hover:scale-110 transition ease-in-out delay-80 ml-0 sm:ml-8 mt-6 text-[#C7C7C7] text-[18px] font-semibold bg-transparent p-4 pl-8 pr-8 font-jetbrains">projetos</button>
             </div>
           </div>
         </div>
@@ -65,8 +65,8 @@ function App() {
             </div>
           </div>
           <div className="w-fit sm:pt-20 sm:w-[50%] flex flex-col items-center justify-center">
-              <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center transition ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/1Lq-5WnN5t8UDT6QeR_liorucRCZfFfYX/view?usp=sharing"><button>Currículo (PT/BR)</button></a>
-              <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center transition ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/1Lq-5WnN5t8UDT6QeR_liorucRCZfFfYX/view?usp=sharing"><button>Resume (EN)</button></a>
+              <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center hover:scale-110 transition-all ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/1Lq-5WnN5t8UDT6QeR_liorucRCZfFfYX/view?usp=sharing"><button>Currículo (PT/BR)</button></a>
+              <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center hover:scale-110 transition-all ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/1Lq-5WnN5t8UDT6QeR_liorucRCZfFfYX/view?usp=sharing"><button>Resume (EN)</button></a>
             </div>
         </div>
       </div>
