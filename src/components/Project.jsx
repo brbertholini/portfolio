@@ -2,7 +2,8 @@ import { FaGithub } from "react-icons/fa";
 
 export function Project({ image, title, description, repoLink }) {
     return (
-        <div className="h-fit max-w-[460px] md:max-w-[600px] lg:max-w-[100%] flex flex-col">
+        <div className="h-fit max-w-[460px] md:max-w-[600px] lg:max-w-[100%] flex flex-col hover:scale-105 transition-all">
+            <a href={repoLink} target="_blank" >
             <img className='' src={image} alt={title} />
             <div className='bg-[#16191D] p-5 h-fit flex flex-col'>
                 <h1 className='text-white text-[18px] sm:text-[20px] font-jetbrains font-bold mb-3'>{title}</h1>
@@ -12,6 +13,7 @@ export function Project({ image, title, description, repoLink }) {
                     Repositório
                 </a>
             </div>
+            </a>
         </div>
     );
 }
