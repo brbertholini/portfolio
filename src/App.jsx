@@ -3,6 +3,7 @@ import { scrollToSection } from "./utils/utils";
 import { Footer } from "./components/Footer";
 import { Contact } from "./components/Contact";
 import { Projects } from "./components/Projects";
+import { Knowledge } from "./components/Knowledge";
 
 function App() {
   return (
@@ -21,7 +22,7 @@ function App() {
           </div>
         </div>
         <Projects />
-
+        <Knowledge />
         <Contact />
       </div>
       <Footer />
