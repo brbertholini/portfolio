@@ -1,10 +1,10 @@
 export function Knowledge() {
     return (
-        <div className="pt-20 flex flex-col sm:w-[70%]">
-            <h1 id="contact" className="text-[28px] sm:text-[36px] pb-8 font-jetbrains font-semibold text-white">Conhecimento</h1>
+        <div id="knowledge" className="pt-20 flex flex-col sm:w-[70%]">
+            <h1 className="text-[28px] sm:text-[36px] pb-8 font-jetbrains font-semibold text-white">Conhecimento</h1>
             <div className="justify-items-center">
                     <div className="flex flex-col">
-                    <h1 id="contact" className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Front-end</h1>
+                    <h1 className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Front-end</h1>
                         <div className="flex flex-wrap gap-3">
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains  text-white">Javascript</h1>
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains  text-white">Typescript</h1>
@@ -15,7 +15,7 @@ export function Knowledge() {
                         </div>
                     </div>
                     <div className="flex flex-col pt-8">
-                    <h1 id="contact" className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Back-end</h1>
+                    <h1 className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Back-end</h1>
                         <div className="flex flex-wrap gap-3">
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains text-white">Java</h1>
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains  text-white">Spring</h1>
@@ -25,7 +25,7 @@ export function Knowledge() {
                         </div>
                     </div>
                     <div className="flex flex-col pt-8">
-                    <h1 id="contact" className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Ferramentas</h1>
+                    <h1 className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Ferramentas</h1>
                         <div className="flex flex-wrap gap-3">
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains  text-white">Git</h1>
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains  text-white">Github</h1>
@@ -37,7 +37,7 @@ export function Knowledge() {
                         </div>
                     </div>
                     <div className="flex flex-col pt-8">
-                    <h1 id="contact" className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Conceitos</h1>
+                    <h1 className="text-[22px] sm:text-[30px] pb-3 font-jetbrains font-semibold text-white">Conceitos</h1>
                         <div className="flex flex-wrap gap-3">
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains text-white">OOP</h1>
                             <h1 className="text-[18px] sm:text-[22px] bg-[#16191D] text-center pr-4 pl-4 items-center font-jetbrains text-white">SCRUM</h1>

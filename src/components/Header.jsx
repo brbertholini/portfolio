@@ -18,7 +18,8 @@ export function Header() {
         <div className="sticky top-0 z-50 mb-16 bg-white flex justify-center items-center h-24">
             <div className="hidden pt-4 pb-4 md:flex md:items-center ">
                 <ul className="flex">
-                    <li onClick={() => scrollToSection('projects', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 mr-55px hover:opacity-40 hover:scale-110 transition-all cursor-pointer">projetos</li>
+                    <li onClick={() => scrollToSection('projects', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 mr-30px lg:mr-14 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">projetos</li>
+                    <li onClick={() => scrollToSection('knowledge', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 mr-30px lg:mr-14 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">conhecimento</li>
                     <li onClick={() => scrollToSection('contact', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">contato</li>
                 </ul>
                 <div className="text-[#1F2329] flex ml-55px">
@@ -35,8 +36,9 @@ export function Header() {
             <div>
                 <div className={nav ? 'fixed left-0 top-0 w-[60%] pl-10 pr-10  h-full bg-white ease-in-out duration-500' : 'fixed left-[-100%]'}>
                     <ul className="">
-                        <li onClick={() => scrollToSection('projects', 140)} className="text-[#1F2329] pr-10  font-bold font-jetbrains text-xl pt-10 hover:opacity-40 cursor-pointer">projetos</li>
-                        <li onClick={() => scrollToSection('contact', 140)} className="text-[#1F2329] pr-10  font-bold font-jetbrains text-xl pt-7 hover:opacity-40 cursor-pointer">curriculo</li>
+                        <li onClick={() => { scrollToSection('projects', 140); handleNav(); }} className="text-[#1F2329] pr-10  font-bold font-jetbrains text-xl pt-10 hover:opacity-40 cursor-pointer">projetos</li>
+                        <li onClick={() => { scrollToSection('knowledge', 140); handleNav(); }} className="text-[#1F2329] pr-10  font-bold font-jetbrains text-xl pt-7 hover:opacity-40 cursor-pointer">conhecimento</li>
+                        <li onClick={() => { scrollToSection('contact', 140); handleNav(); }} className="text-[#1F2329] pr-10  font-bold font-jetbrains text-xl pt-7 hover:opacity-40 cursor-pointer">curriculo</li>
                     </ul>
                     <ul className="text-[#1F2329] font-bold pt-7 flex flex-wrap">
                         <li className="flex w-[100%] items-center">
