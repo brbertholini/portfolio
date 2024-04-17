@@ -26,8 +26,8 @@ export function Contact() {
           </div>
         </div>
         <div className="w-fit sm:pt-20 sm:w-[50%] flex flex-col items-center justify-center">
-            <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center hover:scale-110 transition-all ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/1Lq-5WnN5t8UDT6QeR_liorucRCZfFfYX/view?usp=sharing"><button>Currículo (PT/BR)</button></a>
-            <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center hover:scale-110 transition-all ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/1Lq-5WnN5t8UDT6QeR_liorucRCZfFfYX/view?usp=sharing"><button>Resume (EN)</button></a>
+            <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center hover:scale-110 transition-all ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/18DawL8A3vCHlKIABUXXveumJcXcTSI2X/view?usp=sharing"><button>Currículo (PT/BR)</button></a>
+            <a className="w-[100%] sm:w-[70%] hover:opacity-60 text-center hover:scale-110 transition-all ease-in-out delay-80 mt-6 text-[#17191E] text-[14px] sm:text-[18px] font-semibold bg-white p-4 font-jetbrains" target="_blank" href="https://drive.google.com/file/d/18DawL8A3vCHlKIABUXXveumJcXcTSI2X/view?usp=sharing"><button>Resume (EN)</button></a>
           </div>
       </div>
     )
