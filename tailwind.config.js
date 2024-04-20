@@ -13,6 +13,8 @@ export default {
       },
       fontFamily: {
         'jetbrains': ['JetBrains Mono', 'monospace'],
+        'montserrat': ['Montserrat', 'sans-serif'],
+        'poppins': ['Poppins', 'sans-serif']
       }
     },
   },

@@ -15,22 +15,18 @@ export function Header() {
     }
 
     return (
-        <div className="sticky top-0 z-50 mb-16 bg-white flex justify-center items-center h-24">
-            <div className="hidden pt-4 pb-4 md:flex md:items-center ">
+        <div className="sticky top-0 z-50 flex justify-center items-center h-40 w-full">
+            <div className="hidden md:flex pt-4 pb-4 justify-between items-center w-full lg:mr-64 lg:ml-64">
+                <h1 className="font-poppins text-base 2xl:text-xl">Bruno Bertholini</h1>
                 <ul className="flex">
-                    <li onClick={() => scrollToSection('projects', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 mr-30px lg:mr-14 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">projetos</li>
-                    <li onClick={() => scrollToSection('knowledge', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 mr-30px lg:mr-14 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">conhecimento</li>
-                    <li onClick={() => scrollToSection('contact', 140)} className="text-[#1F2329] font-jetbrains text-xl p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">contato</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl p-4 lg:mr-8 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Início</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl p-4 lg:mr-8 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Projetos</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl lg:mr-8 p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Habilidades</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Contato</li>
                 </ul>
-                <div className="text-[#1F2329] flex ml-55px">
-                    <a target="_blank" href="https://github.com/brbertholini"><FaGithub size={24} className="mr-8 hover:opacity-40 hover:scale-125 transition-all cursor-pointer" /></a>
-                    <a target="_blank" href="https://www.linkedin.com/in/bruno-bertholini/"><FaLinkedin size={24} className="hover:opacity-40 hover:scale-125 transition-all cursor-pointer" /></a>
-                    <a target="_blank" href="mailto:brbertholini@gmail.com"><MdEmail size={24} className="ml-8 hover:opacity-40 hover:scale-125 transition-all cursor-pointer" /></a>
-                    <a target="_blank" href="https://api.whatsapp.com/send?phone=5511990246137"><IoLogoWhatsapp size={24} className="ml-8 hover:opacity-40 hover:scale-125 transition-all cursor-pointer" /></a>
-                </div>
             </div>
             <div onClick={handleNav} className="flex md:hidden fixed text-[#1F2329] right-12">
-                <h1 className="font-jetbrains font-semibold fixed left-12">Bruno Bertholini</h1>
+                <h1 className="font-montserrat font-semibold fixed left-12">Bruno Bertholini</h1>
                 {nav ? <AiOutlineClose size={24} className="bg-transparent text-[#1F2329]" /> : <AiOutlineMenu size={24} className="bg-transparent text-[#1F2329]" />}
             </div>
             <div>
