@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
 import { useState } from "react";
 import { scrollToSection } from "../utils/utils";
+import foto from "../assets/images/foto.jpg"
 import { IoLogoWhatsapp } from "react-icons/io";
 
 
@@ -15,14 +16,14 @@ export function Header() {
     }
 
     return (
-        <div className="sticky top-0 z-50 flex justify-center items-center h-40 w-full">
-            <div className="hidden md:flex pt-4 pb-4 justify-between items-center w-full lg:mr-64 lg:ml-64">
-                <h1 className="font-poppins text-base 2xl:text-xl">Bruno Bertholini</h1>
+        <div className="top-0 z-50 flex justify-center items-center h-32 w-full">
+            <div className="hidden md:flex pt-4 pb-4 justify-between items-center w-full">
+                <img className="sm:flex h-16 rounded-full" src={foto} />
                 <ul className="flex">
-                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl p-4 lg:mr-8 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Início</li>
-                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl p-4 lg:mr-8 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Projetos</li>
-                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl lg:mr-8 p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Habilidades</li>
-                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-xl p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Contato</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-lg p-4 lg:mr-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Início</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-lg p-4 lg:mr-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Projetos</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-lg lg:mr-4 p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Habilidades</li>
+                    <li onClick={() => scrollToSection(140)} className="text-[#212121] font-poppins text-base 2xl:text-lg p-4 hover:opacity-40 hover:scale-110 transition-all cursor-pointer">Contato</li>
                 </ul>
             </div>
             <div onClick={handleNav} className="flex md:hidden fixed text-[#1F2329] right-12">
