@@ -6,10 +6,10 @@ export function Projects() {
     return(
         <div>
         <div className="pt-20 flex flex-col">
-          <h1 id="projects" className="text-[28px] sm:text-[36px] pb-8 font-montserrat font-extrabold text-[#212121]">Projetos</h1>
+          <h1 id="projects" className="text-[28px] sm:text-2xl pb-8 font-montserrat font-extrabold text-[#212121]">Projetos</h1>
         </div>
         <div className="justify-items-center">
-          <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center gap-20">
+          <div className="grid grid-cols-1 justify-items-center">
             <Project
               image={lovecandle}
               title="Gestão de estoque"
