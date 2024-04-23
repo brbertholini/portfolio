@@ -5,15 +5,15 @@ import adopet from '../assets/images/adopet.png';
 export function Projects() {
     return(
         <div>
-        <div className="pt-20 flex flex-col">
-          <h1 id="projects" className="text-[28px] sm:text-2xl pb-8 font-montserrat font-extrabold text-[#212121]">Projetos</h1>
+        <div className="pt-32 flex flex-col">
+          <h1 id="projects" className="text-2xl pb-12 font-poppins font-extrabold text-[#212121]">Projetos</h1>
         </div>
         <div className="justify-items-center">
-          <div className="grid grid-cols-1 justify-items-center">
+          <div className="grid grid-cols-1 gap-24 justify-items-center">
             <Project
               image={lovecandle}
               title="Gestão de estoque"
-              description="Projeto real para um familiar. Sistema de estoque para uma loja de velas. Rest API desenvolvida com Java Spring, Hibernate, Docker, React no front-end, Figma para prototipação."
+              description="Sistema de estoque em desenvolvimento para uma loja de velas. Rest API sendo desenvolvida com Java Spring, Hibernate, Docker, React no front-end e Figma para prototipação."
               repoLink="https://github.com/brbertholini/love-candle-backend"
             />
             <Project
